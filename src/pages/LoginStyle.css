@@ -1,0 +1,146 @@
+@import url("https://use.typekit.net/lde2jui.css");
+
+.form-container{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(100vh - 280px);
+    padding: 50px;
+    min-width: 300px
+}
+
+
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;  
+    width: 100%;
+    padding: 24px;
+    background-color: rgb(47, 47, 47);
+    /* color: black; */
+    border: solid 1px white;
+    box-shadow: 2px -1px 7px white;
+    max-width: 300px;
+    margin: auto;
+    min-height: 450px;
+    
+}
+
+
+.form-wrapper h1{
+    font-size: 28px;
+
+}
+
+.form-wrapper input{
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    outline-color: red;
+    border: none;
+    border-radius: 4px;
+    width: 180px;
+
+
+}
+
+.form-wrapper div{
+    /* height: 70px; */
+}
+.form-wrapper img{
+    height: 120px;
+    padding-top: 20px;
+}
+
+.image-signup-container{
+    border: solid 1px white;
+    background-color: rgb(210, 210, 210);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    translate: -40px 25px;
+}
+
+.image-signup-container img{
+    object-fit: cover;
+    translate: -10px -20px;
+}
+
+.form-wrapper .submit-login-signup{
+    font-family: inherit;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 80px;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+}
+
+.form-wrapper .submit-login-signup:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 10px rgb(247, 137, 137);
+    color: red;
+    background-color: white;
+}
+
+.title-login-for-hulk{
+    margin-top: 120px;
+}
+
+.form-wrapper div:first-child{
+    position: relative;
+}
+.image-login-container{
+    position: absolute;
+    top: -120px;
+    right: -20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-input label{
+    gap: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* border: solid 1px white; */
+    border-radius: 4px;
+    width: 100px;
+    margin: 10px 0;
+    padding: 7px 0;
+    transition: all 0.3s ease;
+    border: solid 1px rgb(47, 47, 47)
+}
+
+.custom-file-input label:hover{
+    cursor: pointer;
+    color: red;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form .absolute-for-deadpool{
+    position: relative;
+}
+
+form .deadpool-wrapper-signup img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: 0 -120px;
+
+}
+
+.span-login-to-signup{
+    color: red;
+    cursor: pointer;
+    margin-left: 3px;
+}

@@ -1,0 +1,105 @@
+@import url("https://use.typekit.net/lde2jui.css");
+
+
+.comic-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 690px;
+    margin: auto;
+    padding: 24px 40px;
+}
+
+.flip-comics-card{
+    background-color: transparent;
+    width: 216px;
+    height: 324px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-comics-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #d9d9d9;
+    box-shadow: 2px 2px 5px rgb(126, 126, 126);
+    /* border-radius: 5px; */
+  }
+
+  .flip-comics-card:hover .flip-comics-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-comics-card-front, .flip-comics-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  /* .flip-comics-card-front img{
+    border-radius: 5px;
+  } */
+
+  .flip-comics-card-back {
+    box-sizing: border-box;
+    font-family: "captain-comic";
+    background-color: rgb(32, 32, 32);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+  }
+
+.flip-comics-card-back h1{
+    font-size: 18px;  
+    margin: 15px 0;
+  }
+
+  .flip-comics-card-back p{
+   text-align: left;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .add-to-favorite-comics{
+    font-family: "captain-comic";
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: black;
+    position: relative;
+  }
+  .add-to-favorite-comics p{
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  .favorite-icon-comics{
+    color: wheat;
+  }
+
+  .alerte-favorite-comics{
+    transition: all 0.3s ease;
+    position: absolute;
+    font-family: 'captain-comic';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    top: 120px;
+    left: 0px;
+    max-width: 250px;
+  }

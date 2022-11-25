@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/lde2jui.css");
+
+
+.LazyLoad {
+    opacity: 0;
+    transition: all 1.2s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+
+.container-character{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 930px;
+  min-height: calc(100vh - 641px);
+}
+
+.character-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 24px 40px;
+}
+
+.character-card-container{
+  
+  width: 270px;
+  height: 200px;
+  border: solid 1px #ffffffed;
+  box-shadow: 2px 2px 5px rgba(126, 126, 126, 0.772);
+  /* border-radius: 5px; */
+
+}
+
+
+.character-image{
+  position: relative;
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+
+.character-image img:hover{
+  transition: all ease 0.3s;
+  scale: 1.2;
+  rotate: -1deg;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgb(126, 126, 126);
+
+}
+.character-image img{
+  transition: all ease 0.3s;
+}
+
+
+.character-title{
+  font-size: 24px;
+  font-family: "captain-comic";
+  font-weight: 700;
+  font-style: italic;
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+}
+
+

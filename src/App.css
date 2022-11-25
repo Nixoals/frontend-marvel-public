@@ -1,0 +1,364 @@
+@import url('./pages/homeStyle.css');
+@import url('./pages/ComicsStyle.css');
+@import url('./pages/CharacterDetailStyle.css');
+@import url('./pages/LoginStyle.css');
+@import url('./pages/UserInfoStyle.css');
+@import url('./pages/BlogStyle.css');
+
+@import url("https://use.typekit.net/lde2jui.css");
+
+/* Captain Comic Regular
+font-family: captain-comic, sans-serif;
+font-weight: 400;
+font-style: normal;
+Captain Comic Italic
+font-family: captain-comic, sans-serif;
+font-weight: 400;
+font-style: italic;
+Captain Comic Bold
+font-family: captain-comic, sans-serif;
+font-weight: 700;
+font-style: normal;
+Captain Comic Bold Italic
+font-family: captain-comic, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-family: comic-serif-pro, sans-serif; */
+
+
+
+body{
+  /* font-family: "aviano-serif", serif; */
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+
+/* header */
+
+header{
+  background-color: #161616;
+
+  font-family: 'captain-comic';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.primary-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: black;
+  padding: 0 24px;
+}
+
+.primary-nav-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  gap: 20px;
+}
+
+.logo-marvel img{
+  height: 60px;
+}
+.path{
+  fill:black;
+  stroke:0px
+}
+
+.primary-nav-left-button{
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  gap: 20px;
+}
+
+.nav-selection-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+.nav-selection-section:hover{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 10px rgb(247, 137, 137);
+  color: red;
+  background-color: white;
+}
+
+.nav-selection-section a:visited{
+  color: inherit;
+}
+
+.primary-nav-right{
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-nav-right button{
+  font-family: inherit;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.primary-nav-right button:hover{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 10px rgb(247, 137, 137);
+  color: red;
+  background-color: white;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.user-info:hover{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(252, 14, 14);
+  
+}
+
+.user-avatar-picture{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgb(223, 223, 223);
+  overflow: hidden;
+
+}
+
+.user-avatar-picture img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.hero-which{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 64px;
+  -webkit-text-stroke: 1px black;
+  color: rgb(255, 255, 255);
+
+}
+.hero-are-you{
+  font-size: 45px;
+  margin-left: 20px;
+  -webkit-text-stroke: 1px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.hero-wrapper{
+  height: 300px;
+  width: 100%;
+  background-image: url('./assets/images/Hero2.jpg');
+  background-size: cover;
+  background-position: left;
+}
+
+.hero-text-wrapper{
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  /* background-color: rgba(250, 250, 250, 0.756); */
+  /* background: linear-gradient(90deg, rgba(250, 250, 250, 0.756), rgba(250, 250, 250, 0)); */
+  padding: 0 24px;
+}
+.svg-wrapper{
+  max-width: 300px;
+  height: 80px;
+}
+
+.svg-test{
+  width: 300px;
+  translate: 40px 10px;
+}
+.svg-container{
+  
+  /* width: 400px; */
+  max-height: 150px;
+  /* margin-left: 50px; */
+}
+.path-marvel-animation{
+  fill: rgba(255, 0, 0, 0);
+  width: 100%;
+}
+
+
+.secondary-nav-search{
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  height: 50px;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.secondary-nav-search input{
+  height: 25px;
+  outline-color:rgb(252, 14, 14);
+  border: none;
+  border-radius: 5px;
+}
+
+.search-pages-wrapper{
+  font-family: captain-comic;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+.search-pages-wrapper div{
+  width: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-pages-wrapper button{
+  font-family: captain-comic;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px red;
+  transition: all 0.2s ease;
+
+}
+
+.search-pages-wrapper button:hover{
+  color: white;
+  background-color: red;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+
+.sweet-loading{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auto-complete input{
+  color: black;
+  background-color: white;
+}
+
+footer{
+  height: 100px;
+  padding: 25px;
+  background-color: black;
+  border-top: rgba(255, 255, 255, 0.375) solid 1px;
+}
+
+footer h1{
+  font-size: 16px;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+  font-family: 'captain-comic';
+  max-width: 600px;
+  margin: auto;
+  
+}
+
+@media (max-width:820px){
+  .primary-nav{
+    height: 200px;
+  }
+  .primary-nav-left{
+    flex-direction: column;
+    max-width: 375px;
+
+  }
+  .primary-nav-left .primary-nav-left-button{
+    max-width: 375px;
+    background-color: black;
+    border-radius: 0;
+  }
+  
+}
+
+  @media (max-width:580px){
+    .primary-nav{
+      height: 240px;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .primary-nav-left{
+      width: 355px;
+    }
+    .primary-nav-left .primary-nav-left-button{
+      max-width: 355px;
+      background-color: black;
+      border-radius: 0;
+      gap: 0;
+    }
+    .nav-selection-section{
+      background-color: black;
+    }
+    .nav-selection-section:hover{
+      background-color: black;
+      box-shadow: none;
+    }
+
+    .primary-nav-right{
+      margin: 0 auto;
+    }
+    .form-container{
+      padding: 50px 0;
+    }
+    .form-wrapper{
+      max-width: 275px;
+    }
+  }
+
+  /* .primary-nav-left-button{
+    flex-direction: column;
+    gap: 5px;
+  } */
+
